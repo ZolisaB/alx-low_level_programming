@@ -1,8 +1,3 @@
-/*
- * File: 9-print_comb.c
- * Auth: ZolisaB
- */
-
 #include <stdio.h>
 
 /**
