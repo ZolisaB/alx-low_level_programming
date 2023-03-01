@@ -18,6 +18,7 @@ p = &n;
 /*
 * write your line of code here...
 * Remember:
+* main - magic
 * - you are not allowed to use a
 * - you are not allowed to modify p
 * - only one statement
