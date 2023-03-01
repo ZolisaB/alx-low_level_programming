@@ -1,5 +1,13 @@
 #include <stdio.h>
 
+/**
+ * main - entry
+ *
+ * Description: Prints 98\n
+ *
+ * Return: Always 0 (Success)
+ */
+
 int main(void)
 {
 int n;
@@ -8,11 +16,9 @@ int *p;
 
 a[2] = 1024;
 p = &n;
-/*
-* Main: Prints 98\n 8/.
-*/
-*(p + 5) = 98;
-/* ...so that this prints 98\n */
+
+*(p + (sizeof(int) * 5)) = 98;
+
 printf("a[2] = %d\n", a[2]);
 return (0);
 }
