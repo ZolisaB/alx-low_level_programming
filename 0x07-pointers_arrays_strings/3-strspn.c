@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 /**
  * _strspn - Entry point
  * @s: input
