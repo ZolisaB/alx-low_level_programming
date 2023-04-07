@@ -8,26 +8,29 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int decimal = 0, power = 1;
-	int len = 0;
+	unsigned int result = 0;
+	int power = 1;
+	const char *p = b;
 
-	if (!b)
+	if (b == NULL)
 		return (0);
 
-	while (b[len] != '\0')
+	while (*P != '\0')
 	{
-		if (b[len] != '0' && b[len] != '1')
+		if (*p != '0' && *p != '1')
 			return (0);
-		len++
+		p++;
+
 	}
 
-	while (--len >= 0)
+	p--;
+
+	while (p >= 0)
 	{
-		if (b[len]++ '1')
-			decimal += power;
+		if (*p == '1')
+			result += power;
 		power *= 2;
+		p--;
 	}
 
-	return (decimal);
-
-}
+	return (result);
